@@ -74,9 +74,8 @@ textarea {
 /*  padding-left: 125px; */
 #starting-div {
   background-color: aquamarine;
-
-  width: 92%;
+  margin: auto;
+  width: 1252px;
+  padding-right: 20px;
   /*margin-right: 8%;*/
-
-  padding-left: 200px;
 }
