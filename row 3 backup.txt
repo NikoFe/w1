@@ -1,0 +1,97 @@
+.row-3 {
+  margin: auto;
+  width: 85%;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.row-3-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-3-input ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.row-3-input li {
+  display: inline;
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+.row-3-input textarea {
+  border-radius: 1%;
+  width: 620px;
+  height: 145px;
+  border: solid 1px lightgray;
+  font-size: 24px;
+
+  padding: 10px;
+}
+
+.row-3-input textarea:focus {
+  outline: none;
+}
+
+.row-3 .right textarea {
+  background-color: rgb(247, 247, 247);
+}
+
+.right-bottom {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.fa-microphone {
+  position: absolute;
+  top: 115px;
+  left: 20px;
+}
+
+.fa-keyboard {
+  position: absolute;
+  top: 125px;
+  left: 580px;
+}
+
+.relative-3 {
+  position: relative;
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 125px;
+  left: 610px;
+}
+
+.row-3 .right ul {
+  margin-left: 20px;
+}
+
+.fa-repeat {
+  position: absolute;
+  left: 630px;
+  top: 30px;
+}
+
+#filled {
+  display: inline;
+  position: absolute;
+  left: 500px;
+  top: 110px;
+  font-size: 13px;
+  color: gray;
+}

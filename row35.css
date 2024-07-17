@@ -1,0 +1,87 @@
+.row-35 {
+  margin: auto;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.row-35 textarea {
+  border-radius: 1%;
+  width: 620px;
+  height: 145px;
+  border: solid 1px lightgray;
+  font-size: 24px;
+  display: inline;
+
+  padding: 10px;
+}
+
+.row-3-input textarea:focus {
+  outline: none;
+}
+
+.relative-3 .right textarea {
+  background-color: rgb(246, 246, 246);
+}
+
+.right-bottom {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.row-35 .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative-3 .fa-xmark {
+  position: absolute;
+  left: 610px;
+  top: 20px;
+  font-size: 18px;
+  display: none;
+}
+
+.relative-3 .fa-volume-high {
+  position: absolute;
+  left: 50px;
+  top: 115px;
+  display: none;
+}
+
+#dictionaryLink {
+  text-decoration: underline;
+  color: gray;
+  position: absolute;
+  left: 20px;
+  top: 75px;
+  font-size: 14px;
+  display: none;
+}
+.fa-microphone {
+  position: absolute;
+  top: 115px;
+  left: 20px;
+}
+
+.fa-keyboard {
+  position: absolute;
+  top: 125px;
+  left: 580px;
+}
+
+.relative-3 {
+  position: relative;
+  background-color: green;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.bottom div {
+  display: flex;
+}

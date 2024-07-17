@@ -1,0 +1,41 @@
+.row-3 {
+  margin-left: 0;
+  width: 85%;
+  gap: 270px;
+  justify-content: start;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.row-3-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-3-input ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.row-3-input li {
+  display: inline;
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+.row-3 .right ul {
+  margin-left: 20px;
+}
+
+.fa-repeat {
+  position: absolute;
+  left: 630px;
+  top: 30px;
+}

@@ -1,0 +1,270 @@
+<!--media querry-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/row-1.css" />
+    <link rel="stylesheet" href="styles/row-2.css" />
+    <link rel="stylesheet" href="styles/row-3.css" />
+    <link rel="stylesheet" href="styles/row-35.css" />
+    <link rel="stylesheet" href="styles/row-4.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/favorites-sidebar.css" />
+    <link rel="stylesheet" href="styles/history-sidebar.css" />
+  </head>
+
+  <body>
+    <div class="row-1 rows" id="row-1">
+      <div class="left">
+        <i class="fa-solid fa-burger"></i>
+        <img src="images/google.png" class="google-img" />
+      </div>
+
+      <div class="right">
+        <i class="fa-solid fa-gear"></i>
+        <i class="fa-solid fa-braille"></i>
+        <img src="images/user.png" class="user-avatar" />
+      </div>
+    </div>
+    <div id="starting-div">
+      <div class="row-2 rows" id="row-2">
+        <button id="text-button" class="button-1" onclick="textButtonClick()">
+          <i class="fa-solid fa-language"></i> Besedilo
+        </button>
+        <button
+          id="images-button"
+          class="button-1"
+          onclick="imagesButtonClick()"
+        >
+          <i class="fa-solid fa-image"></i> Slike
+        </button>
+        <button
+          id="documents-button"
+          class="button-1"
+          onclick="documentsButtonClick()"
+        >
+          <i class="fa-solid fa-file"></i> Dokumenti
+        </button>
+        <button
+          id="websites-button"
+          class="button-1"
+          onclick="websitesButtonClick()"
+        >
+          <i class="fa-solid fa-window-maximize"></i> Spletna mesta
+        </button>
+      </div>
+
+      <div class="row-3 rows" id="row-3">
+        <i class="fa-solid fa-repeat"></i>
+        <div class="left row-3-input">
+          <ul>
+            <li class="left-language">Zaznan jezik</li>
+            <li class="left-language">korejščina</li>
+            <li class="left-language">slovenščina</li>
+            <li class="left-language">angleščina</li>
+
+            <div class="row-3-left-dropdown">
+              <i class="fa-solid fa-angle-down" onclick="toggleDropdown1()"></i>
+              <div id="dropdown1" class="dropdown-content">
+                <div class="inner-dropdown">
+                  <ul>
+                    <li><a>Zaznan jezik</a></li>
+                    <li><a>čevščina</a></li>
+                    <li><a>ilokanščina</a></li>
+                    <li><a>latinščina</a></li>
+                    <li><a>odijščina(orijščina)</a></li>
+                    <li><a>šonščina</a></li>
+                  </ul>
+                  <ul>
+                    <li><a>abhaščina</a></li>
+                    <li><a>čuvaščina</a></li>
+                    <li><a>indonezijščina</a></li>
+                    <li><a>latvijščina</a></li>
+                    <li><a>okcitanščina</a></li>
+                    <li><a>španščina</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="right row-3-input">
+          <ul>
+            <li class="right-language">angleščina</li>
+            <li class="right-language">korejščina</li>
+            <li class="right-language">slovenščina</li>
+            <i class="fa-solid fa-angle-down" onclick="toggleDropdown1()"></i>
+          </ul>
+        </div>
+      </div>
+      <div id="newDiv" class="rows"></div>
+
+      <!---------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="row-35 rows" id="row-35">
+        <div class="relative-3">
+          <div class="top">
+            <textarea
+              id="left-text-area"
+              onkeyup="leftTextAreaChange()"
+              maxlength="5000"
+            ></textarea>
+            <i class="fa-solid fa-xmark" id="left-x"></i>
+          </div>
+
+          <p id="dictionaryLink">Ogled Slovarja</p>
+          <div class="bottom">
+            <div class="bottom-left">
+              <i class="fa-solid fa-microphone" id="left-microphone"></i>
+              <i class="fa-solid fa-volume-high" id="left-speaker"></i>
+            </div>
+
+            <div class="bottom-right">
+              <p id="filled">0/5.000</p>
+              <i class="fa-solid fa-keyboard" id="leftKeyboard"></i>
+              <i
+                class="fa-solid fa-caret-down dropdown-icon"
+                id="left-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="right"></div>
+        <div class="relative-3" id="relative-3-right">
+          <div class="right">
+            <div class="top">
+              <textarea id="right-text-area">Prevod</textarea>
+              <i class="fa-solid fa-star" id="right-star"></i>
+            </div>
+          </div>
+
+          <div class="right-bottom">
+            <i class="fa-solid fa-volume-high" id="right-speaker"></i>
+          </div>
+        </div>
+      </div>
+      <div id="row-35-extra">
+        <p>Pošljite povratne informacije</p>
+      </div>
+      <!---------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="row-4 rows" id="row-4">
+        <div class="left">
+          <div class="repeat-circle circle" onclick="history()">
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+          <p class="under-circle">Zgodovina</p>
+        </div>
+
+        <div class="right">
+          <div class="saved-circle circle" onclick="favorites()">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="under-circle">Shranjeno</p>
+        </div>
+      </div>
+    </div>
+    <!-- end of starting div-->
+
+    <div id="history-sidebar">
+      <div class="inner-flex">
+        <div class="first-row">
+          Zgodovina
+          <i class="fa-solid fa-xmark" onclick="hideHistory()"></i>
+        </div>
+        <div class="second-row">Počisti celotno zgodovino</div>
+        <div class="third-row">
+          <div class="hist">
+            <div class="hist-first">
+              Angleščina -> korejščina
+              <div class="star-elipsis">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="hist-second">Anteater</div>
+            <div class="hist-third">Banana</div>
+          </div>
+
+          <div class="hist">
+            <div class="hist-first">
+              Slovenščina -> Angleščina
+              <div class="star-elipsis">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="hist-second">Jabolka</div>
+            <div class="hist-third">AAA</div>
+          </div>
+
+          <div class="hist">
+            <div class="hist-first">
+              Slovenščina -> Angleščina
+              <div class="star-elipsis">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="hist-second">Jabolka</div>
+            <div class="hist-third">AAA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="favorites-sidebar">
+      <div class="row-f1">
+        <div class="row-f11">
+          <p>Shranjeno</p>
+          <i
+            class="fa-solid fa-xmark"
+            id="left-x"
+            onclick="hideFavorites()"
+          ></i>
+        </div>
+        <div class="row-f12">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <div class="right">
+            <div class="r1">
+              <p>Razvrsti</p>
+              <i class="fa-solid fa-angle-down" onclick="toggleDropdown1()"></i>
+            </div>
+            <i class="fa-solid fa-folder-plus"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row-f2">
+        <p>1 izraz</p>
+        <div class="rightf2">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="row-f3">
+        <div class="left">
+          <div class="to">angleščina -> slovenščina</div>
+          <p>snubbed</p>
+          <p>snubbed</p>
+        </div>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+
+    <script src="scripts/general.js"></script>
+    <script src="scripts/row-1.js"></script>
+    <script src="scripts/row-2.js"></script>
+    <script src="scripts/row-3.js"></script>
+    <script src="scripts/row-4.js"></script>
+    <script src="scripts/dropdown.js"></script>
+  </body>
+</html>

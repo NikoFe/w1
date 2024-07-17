@@ -1,0 +1,32 @@
+.row-4 {
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  padding-right: 13%;
+}
+
+.circle {
+  border-radius: 100%;
+
+  font-size: 20px;
+  border: solid 1px lightgray;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.row-4 .left {
+  display: flex;
+  flex-direction: column;
+}
+.row-4 .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-4 .right ul {
+  margin-left: 50px;
+}
