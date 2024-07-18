@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/dropdown.css" />
     <link rel="stylesheet" href="styles/favorites-sidebar.css" />
     <link rel="stylesheet" href="styles/history-sidebar.css" />
+    <link rel="stylesheet" href="styles/media-querries.css" />
   </head>
 
   <body>
@@ -64,90 +65,98 @@
 
       <div class="row-3 rows" id="row-3">
         <i class="fa-solid fa-repeat"></i>
-        <div class="left row-3-input">
-          <ul>
-            <li class="left-language">Zaznan jezik</li>
-            <li class="left-language">korejščina</li>
-            <li class="left-language">slovenščina</li>
-            <li class="left-language">angleščina</li>
-
-            <div class="row-3-left-dropdown">
-              <i class="fa-solid fa-angle-down" onclick="toggleDropdown1()"></i>
-              <div id="dropdown1" class="dropdown-content">
-                <div class="inner-dropdown">
-                  <ul>
-                    <li><a>Zaznan jezik</a></li>
-                    <li><a>čevščina</a></li>
-                    <li><a>ilokanščina</a></li>
-                    <li><a>latinščina</a></li>
-                    <li><a>odijščina(orijščina)</a></li>
-                    <li><a>šonščina</a></li>
-                  </ul>
-                  <ul>
-                    <li><a>abhaščina</a></li>
-                    <li><a>čuvaščina</a></li>
-                    <li><a>indonezijščina</a></li>
-                    <li><a>latvijščina</a></li>
-                    <li><a>okcitanščina</a></li>
-                    <li><a>španščina</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </ul>
-        </div>
-        <div class="right row-3-input">
-          <ul>
-            <li class="right-language">angleščina</li>
-            <li class="right-language">korejščina</li>
-            <li class="right-language">slovenščina</li>
-            <i class="fa-solid fa-angle-down" onclick="toggleDropdown1()"></i>
-          </ul>
-        </div>
       </div>
       <div id="newDiv" class="rows"></div>
 
       <!---------------------------------------------------------------------------------------------------------------------------------------->
       <div class="row-35 rows" id="row-35">
-        <div class="relative-3">
-          <div class="top">
-            <textarea
-              id="left-text-area"
-              onkeyup="leftTextAreaChange()"
-              maxlength="5000"
-            ></textarea>
-            <i class="fa-solid fa-xmark" id="left-x"></i>
+        <div class="r3left">
+          <div class="left row-3-input" id="langl">
+            <ul>
+              <li class="left-language">Zaznan jezik</li>
+              <li class="left-language">korejščina</li>
+              <li class="left-language">slovenščina</li>
+              <li class="left-language">angleščina</li>
+
+              <div class="row-3-left-dropdown">
+                <i
+                  class="fa-solid fa-angle-down"
+                  onclick="toggleDropdown1()"
+                ></i>
+                <div id="dropdown1" class="dropdown-content">
+                  <div class="inner-dropdown">
+                    <ul>
+                      <li><a>Zaznan jezik</a></li>
+                      <li><a>čevščina</a></li>
+                      <li><a>ilokanščina</a></li>
+                      <li><a>latinščina</a></li>
+                      <li><a>odijščina(orijščina)</a></li>
+                      <li><a>šonščina</a></li>
+                    </ul>
+                    <ul>
+                      <li><a>abhaščina</a></li>
+                      <li><a>čuvaščina</a></li>
+                      <li><a>indonezijščina</a></li>
+                      <li><a>latvijščina</a></li>
+                      <li><a>okcitanščina</a></li>
+                      <li><a>španščina</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
           </div>
 
-          <p id="dictionaryLink">Ogled Slovarja</p>
-          <div class="bottom">
-            <div class="bottom-left">
-              <i class="fa-solid fa-microphone" id="left-microphone"></i>
-              <i class="fa-solid fa-volume-high" id="left-speaker"></i>
+          <div class="relative-3">
+            <div class="top">
+              <textarea
+                id="left-text-area"
+                onkeyup="leftTextAreaChange()"
+                maxlength="5000"
+              ></textarea>
+              <i class="fa-solid fa-xmark" id="left-x"></i>
             </div>
 
-            <div class="bottom-right">
-              <p id="filled">0/5.000</p>
-              <i class="fa-solid fa-keyboard" id="leftKeyboard"></i>
-              <i
-                class="fa-solid fa-caret-down dropdown-icon"
-                id="left-down"
-              ></i>
+            <p id="dictionaryLink">Ogled Slovarja</p>
+            <div class="bottom">
+              <div class="bottom-left">
+                <i class="fa-solid fa-microphone" id="left-microphone"></i>
+                <i class="fa-solid fa-volume-high" id="left-speaker"></i>
+              </div>
+
+              <div class="bottom-right">
+                <p id="filled">0/5.000</p>
+                <i class="fa-solid fa-keyboard" id="leftKeyboard"></i>
+                <i
+                  class="fa-solid fa-caret-down dropdown-icon"
+                  id="left-down"
+                ></i>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="right"></div>
-        <div class="relative-3" id="relative-3-right">
-          <div class="right">
-            <div class="top">
-              <textarea id="right-text-area">Prevod</textarea>
-              <i class="fa-solid fa-star" id="right-star"></i>
-            </div>
+        <!----------------------------------------------------------------------------->
+        <div class="r3right">
+          <div class="right row-3-input" id="langr">
+            <ul>
+              <li class="right-language">angleščina</li>
+              <li class="right-language">korejščina</li>
+              <li class="right-language">slovenščina</li>
+              <i class="fa-solid fa-angle-down" onclick="toggleDropdown1()"></i>
+            </ul>
           </div>
 
-          <div class="right-bottom">
-            <i class="fa-solid fa-volume-high" id="right-speaker"></i>
+          <div class="relative-3" id="relative-3-right">
+            <div class="right">
+              <div class="top">
+                <textarea id="right-text-area">Prevod</textarea>
+                <i class="fa-solid fa-star" id="right-star"></i>
+              </div>
+            </div>
+
+            <div class="right-bottom">
+              <i class="fa-solid fa-volume-high" id="right-speaker"></i>
+            </div>
           </div>
         </div>
       </div>

@@ -16,6 +16,7 @@
   list-style-type: none;
   margin-top: 20px;
   margin-bottom: 12px;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -25,17 +26,23 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: gray;
   font-weight: bold;
 }
 
 .row-3 .right ul {
-  margin-left: 20px;
 }
 
 .fa-repeat {
   position: absolute;
-  left: 630px;
+  left: 580px;
   top: 30px;
+}
+
+#langl {
+  margin-left: 5px;
+}
+#langr {
+  margin-left: 15px;
 }

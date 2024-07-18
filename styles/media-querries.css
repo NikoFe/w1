@@ -1,0 +1,113 @@
+@media screen and (max-width: 1400px) {
+  #relative-3-right,
+  .relative-3 {
+    min-width: 96.6%;
+    max-width: 96.6%;
+  }
+
+  .r3right,
+  .r3left {
+    width: 200%;
+
+    background-color: orange;
+  }
+
+  .row-35 {
+    width: 101.5%;
+    background-color: cornflowerblue;
+    gap: 8px;
+  }
+  #starting-div {
+    margin-left: 3.5%;
+    width: 91%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .row-3 {
+    gap: 21%;
+    width: 101.8%;
+    background-color: brown;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #starting-div {
+    margin-left: 1%;
+    width: 96.5%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #relative-3-right,
+  .relative-3 {
+    min-width: 95.5%;
+    max-width: 95.5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .row-2 {
+    gap: 7px;
+  }
+  #relative-3-right,
+  .relative-3 {
+    min-width: 93%;
+    max-width: 93%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .row-3-input li {
+    display: none;
+  }
+
+  .row-3-input li#selected {
+    display: inline;
+    border: none;
+  }
+
+  .r3right li#selected {
+    color: red;
+    position: absolute;
+    left: 69%;
+    bottom: 160px;
+  }
+
+  #starting-div {
+    margin-left: 0px;
+  }
+
+  .fa-repeat {
+    left: 50%;
+    top: 26px;
+  }
+
+  .row-35 {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .r3left,
+  .r3right {
+    width: 107%;
+  }
+
+  .row-2 {
+    margin-bottom: 0px;
+  }
+
+  #langl {
+    margin-left: 16%;
+  }
+
+  .fa-angle-down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  #documents-button {
+    display: none;
+  }
+}

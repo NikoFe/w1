@@ -5,7 +5,7 @@
 
   display: flex;
   justify-content: start;
-  gap: 5px;
+  gap: 7px;
   width: 92%;
 }
 
@@ -73,8 +73,9 @@
 .relative-3 {
   /*position: relative;*/
   border: solid 1px lightgray;
-  min-width: 605px;
-  max-width: 605px;
+  min-width: 612px;
+  max-width: 612px;
+
   height: 155px;
   padding: 10px;
   border-radius: 1%;
@@ -151,4 +152,9 @@
   margin: auto;
   width: 84%;
   justify-content: end;
+}
+
+.r3right,
+.r3left {
+  position: static;
 }

@@ -66,9 +66,11 @@ function refresh() {
     if (i != leftSelected) {
       leftLanguages[i].style.color = "gray";
       leftLanguages[i].style.borderBottom = "none";
+      leftLanguages[i].id = "none";
     } else {
       leftLanguages[i].style.color = "blue";
       leftLanguages[i].style.borderBottom = "2px solid blue";
+      leftLanguages[i].id = "selected";
     }
   }
   for (let i = 0; i < rightLanguages.length; i++) {
@@ -77,9 +79,11 @@ function refresh() {
     if (i != rightSelected) {
       rightLanguages[i].style.color = "gray";
       rightLanguages[i].style.borderBottom = "none";
+      rightLanguages[i].id = "none";
     } else {
       rightLanguages[i].style.color = "blue";
       rightLanguages[i].style.borderBottom = "2px solid blue";
+      rightLanguages[i].id = "selected";
     }
   }
 }
