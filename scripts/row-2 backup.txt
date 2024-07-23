@@ -4,7 +4,6 @@ const row4 = document.getElementsByClassName("row-4");
 let row35Extra = document.getElementById("row-35-extra");
 let langl = document.getElementById("langl");
 let langr = document.getElementById("langr");
-let relative3 = document.getElementsByClassName("relative-3");
 
 let buttons = document.getElementsByClassName("button-1");
 
@@ -23,9 +22,10 @@ function buttonFocus(number) {
 function createDiv(newDiv, rightDiv) {
   console.log("CREATE DIV");
 
-  relative3[0].style.display = "none";
-  relative3[1].style.display = "none";
-  //row35[0].style.display = "none";
+  langl.style.display = "none";
+  langr.style.display = "none";
+
+  row35[0].style.display = "none";
 
   let element = document.getElementById("newDiv");
   element.remove();
@@ -36,7 +36,7 @@ function createDiv(newDiv, rightDiv) {
   newDiv.style.border = "solid 1px gray";
   newDiv.style.gap = "320px";
   newDiv.style.width = "1290px";
-  newDiv.style.padding = "30px 0px";
+  newDiv.style.padding = "0px 0px";
   newDiv.style.margin = "auto";
   newDiv.style.border = "solid 1px lightGray";
   newDiv.style.borderRadius = "1%";
@@ -72,9 +72,7 @@ function createDiv(newDiv, rightDiv) {
 }
 
 function createForm(newDiv) {
-  relative3[0].style.display = "none";
-  relative3[1].style.display = "none";
-  //row35Extra.style.display = "none";
+  row35Extra.style.display = "none";
   console.log("CREATE FORM!");
   row35[0].style.display = "none";
   let element = document.getElementById("newDiv");

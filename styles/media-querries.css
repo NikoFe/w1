@@ -21,13 +21,20 @@
     margin-left: 3.5%;
     width: 91%;
   }
+
+  .fa-repeat {
+    left: 59%;
+  }
 }
 
 @media screen and (max-width: 1370px) {
   .row-3 {
-    gap: 21%;
+    /*gap: 21%;*/
     width: 101.8%;
     background-color: brown;
+  }
+  .fa-repeat {
+    left: 49%;
   }
 }
 
@@ -54,6 +61,13 @@
   .relative-3 {
     min-width: 93%;
     max-width: 93%;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .lastli {
+    background-color: red;
+    display: none;
   }
 }
 

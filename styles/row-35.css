@@ -150,8 +150,12 @@
   font-size: 12px;
   display: flex;
   margin: auto;
-  width: 84%;
+  width: 101.5%;
   justify-content: end;
+  font-style: italic;
+}
+#row-35-extra p {
+  margin-top: 5px;
 }
 
 .r3right,
